@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coches</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Lista de Coches</h1>
+        </header>
+        
+        {%for Coche in Coche_mostrar%}
+        <article>
+            <p><b>Marca: {{Coche.marca}}</b></p>
+            <p>Modelo: {{Coche.modelo}}</p>
+            <p>Entrada: {{Coche.fecha_entrada}}</p>
+        </article>  
+        {% endfor %}
+        
+    </body>

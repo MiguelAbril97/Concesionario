@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ventas</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Lista de Ventas</h1>
+        </header>
+        
+        {%for Venta in Venta_mostrar%}
+        <article>
+            <p><b>Vendedor: {{Venta.vendedor}}</b></p>
+            <p>Coche vendido: {{Venta.coche_vendido}}</p>
+            <p>Precio: {{Venta.precio}}</p>
+            <p>Fecha: {{Venta.fecha_venta}}</p>
+        </article>  
+        {% endfor %}
+        
+    </body>

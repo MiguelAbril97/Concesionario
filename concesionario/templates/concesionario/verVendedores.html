@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vendedores</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Lista de vendedores</h1>
+        </header>
+        
+        {%for Vendedor in Vendedor_mostrar%}
+        <article>
+            <p><b>Nombre: {{Vendedor.nombre}}</b></p>
+            <p>Jefe: {{Vendedor.jefe}}</p>
+            <p>Ventas: {{vendedor.numeroVentas}}</p>
+            <p>Fecha contrarto: {{Vendedor.fecha_contrato | linebreaksbr}}</p>
+        </article>  
+        {% endfor %}
+        
+    </body>
